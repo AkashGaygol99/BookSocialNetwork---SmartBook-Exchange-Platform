@@ -1,0 +1,74 @@
+<div
+  class="container-fluid min-vh-100 py-5"
+  style="
+    background-image:
+      linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+      url('assets/add-new.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  "
+>
+<div class="container mt-5" style="max-width: 600px;">
+  <div class="card shadow-lg border-0 p-4 rounded-4">
+
+    <h2 class="text-center mb-4 text-primary fw-bold">
+      📚 Add a New Book
+    </h2>
+
+    <form (ngSubmit)="save()">
+
+      <div class="mb-3">
+        <label class="form-label fw-semibold">Book Title</label>
+        <input
+          type="text"
+          class="form-control form-control-lg"
+          [(ngModel)]="title"
+          name="title"
+          placeholder="Enter book title"
+          required
+        />
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label fw-semibold">Author</label>
+        <input
+          type="text"
+          class="form-control form-control-lg"
+          [(ngModel)]="author"
+          name="author"
+          placeholder="Enter author's name"
+          required
+        />
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label fw-semibold">Description</label>
+        <textarea
+          class="form-control"
+          rows="4"
+          [(ngModel)]="description"
+          name="description"
+          placeholder="Enter book description (optional)"
+        ></textarea>
+      </div>
+
+      <!-- SAVE BUTTON -->
+      <button
+        type="submit"
+        class="btn btn-success w-100 py-2 fw-semibold"
+        [disabled]="saving">
+         {{ saving ? 'Saving...' : 'Save Book' }}
+      </button>
+
+      <!-- BACK BUTTON -->
+      <a
+        routerLink="/books"
+        class="btn btn-secondary w-100 py-2 mt-2 fw-semibold">
+         Back to List
+      </a>
+
+    </form>
+
+  </div>
+</div>

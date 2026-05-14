@@ -1,0 +1,39 @@
+.auth-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.auth-card {
+  background: white;
+  width: 100%;
+  max-width: 550px;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.brand-title {
+  font-weight: 700;
+  color: #224abe;
+}
+
+.form-control {
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.btn-primary {
+  border-radius: 12px;
+  padding: 12px;
+  font-weight: 600;
+}
+
+a {
+  color: #224abe;
+}
+
+a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,66 @@
+<div
+  class="container-fluid min-vh-100 py-5"
+  style="
+    background-image:
+      linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+      url('assets/login.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  "
+>
+<div class="auth-wrapper">
+
+  <div class="auth-card shadow-lg">
+
+    <div class="text-center mb-4">
+      <h1 class="brand-title">📚 Book Social Network</h1>
+      <p class="text-muted">Welcome back! Login to continue.</p>
+    </div>
+
+    <form (ngSubmit)="login()">
+
+      <!-- EMAIL -->
+      <div class="mb-3">
+        <label class="form-label fw-semibold">Email Address</label>
+        <input
+          type="email"
+          class="form-control form-control-lg"
+          [(ngModel)]="email"
+          name="email"
+          placeholder="Enter your email"
+          required>
+      </div>
+
+      <!-- PASSWORD -->
+      <div class="mb-4">
+        <label class="form-label fw-semibold">Password</label>
+        <input
+          type="password"
+          class="form-control form-control-lg"
+          [(ngModel)]="password"
+          name="password"
+          placeholder="Enter your password"
+          required>
+      </div>
+
+      <!-- LOGIN BUTTON -->
+      <button type="submit" class="btn btn-primary w-100 btn-lg shadow-sm">
+        🔐 Login
+      </button>
+
+    </form>
+
+    <!-- REGISTER LINK -->
+    <div class="text-center mt-4">
+      <span class="text-muted">New user?</span>
+
+      <a routerLink="/register"
+         class="fw-bold text-decoration-none ms-1">
+         Create Account
+      </a>
+    </div>
+
+  </div>
+
+</div>
