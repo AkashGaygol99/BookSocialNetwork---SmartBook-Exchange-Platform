@@ -47,7 +47,8 @@ A full-stack Book Exchange & Management Platform built using Angular, Spring Boo
 ### Backend
 ```bash
 mvn spring-boot:run
-
+```
 ### Frontend
+```bash
 npm install
 ng serve
