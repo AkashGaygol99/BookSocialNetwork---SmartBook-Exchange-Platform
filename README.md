@@ -1,21 +1,53 @@
-# Book Social Network(SmartBook Exchange Platform)
+# 📚 Book Social Network (SmartBook Exchange Platform)
 
-A full-stack Book Exchange & Management Platform built using Angular, Spring Boot, JWT Authentication, Spring Security, and MySQL.
+A full-stack Book Exchange & Management Platform built using Angular, Spring Boot, Spring Security, JWT Authentication, and MySQL.
 
-## Features
-- JWT Authentication
-- Email Verification
-- Role-Based Access Control
+---
+
+## 🚀 Features
+
+- JWT Authentication & Authorization
+- Email Verification System
+- Role-Based Access Control (Admin/User)
 - Book CRUD Operations
 - Borrow & Return Books
-- Admin/User Authorization
+- Secure REST APIs
 - Responsive Angular UI
+- Protected Routes using Angular Guards
 
-## Tech Stack
+---
+
+## 🛠 Tech Stack
+
+### Frontend
 - Angular
+- TypeScript
+- Bootstrap
+
+### Backend
 - Spring Boot
 - Spring Security
 - JWT
 - Hibernate/JPA
+
+### Database
 - MySQL
-- Bootstrap
+
+### Tools
+- Maven
+- Postman
+- Git & GitHub
+- IntelliJ IDEA
+- VS Code
+
+---
+
+## ▶️ Run Project
+
+### Backend
+```bash
+mvn spring-boot:run
+
+### Frontend
+npm install
+ng serve
